@@ -1,0 +1,27 @@
+.env
+
+# Capturas de sessão (podem conter dados pessoais)
+capturas/
+screenshots/
+
+# Logs e locks gerados em tempo de execução
+*.log
+*.lock
+
+# Relatórios de teste gerados localmente
+junit_*.xml
+tests_*.txt
+test_props_*.txt
+test_results_*.txt
+test_output.txt
+test_int_collect.txt
+
+# Pasta do Kiro IDE (specs e configurações locais da IDE)
+.kiro/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/

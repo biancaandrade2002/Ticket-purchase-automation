@@ -1,0 +1,10 @@
+# Dependências do bot Python (bot.py) — automação de ingressos com Selenium.
+# Instale com:  py -m pip install -r requirements.txt
+selenium>=4.46,<5
+webdriver-manager>=4.1.2,<5
+requests>=2.32,<3
+python-dotenv>=1.0,<2
+
+# Testes (lógica pura em ticket_logic.py e fluxo em bot.py com DOM falso).
+pytest>=8,<10
+hypothesis>=6,<7

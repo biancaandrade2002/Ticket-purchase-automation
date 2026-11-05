@@ -1,0 +1,17 @@
+# Dependências do servidor MCP do BuyTicket (servidor.py / servico.py).
+# Instalação (recomendado em venv dedicado):
+#   py -m venv src/mcps/buyticket/.venv
+#   src/mcps/buyticket/.venv/Scripts/python -m pip install -r src/mcps/buyticket/requirements-mcp.txt
+#   src/mcps/buyticket/.venv/Scripts/python -m pip install -r requirements.txt
+#
+# O servidor importa bot.py/ticket_logic.py, então o mesmo interpretador precisa
+# das dependências da automação (selenium, webdriver-manager, python-dotenv, requests).
+
+# SDK oficial do Model Context Protocol (inclui FastMCP).
+mcp>=1.2,<2
+
+# Dependências da automação reutilizada por bot.py (repetidas aqui para o venv do MCP).
+selenium>=4.46,<5
+webdriver-manager>=4.1.2,<5
+requests>=2.32,<3
+python-dotenv>=1.0,<2
